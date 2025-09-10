@@ -1,8 +1,8 @@
-function loadJoke() {
+async function loadJoke() {
   cardEl.classList.add('hidden');
 
   try {
-    const response = fetch('https://official-joke-api.appspot.com/random_joke');
+    const response = await fetch('https://official-joke-api.appspot.com/random_joke');
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
     const data = response.json();
@@ -18,6 +18,6 @@ function loadJoke() {
 }
 btn = document.getElementById("newJokeBtn");
 
-console.log(btn);
+cardEl = document.getElementById("card");
 
 btn.addEventListener('submit', loadJoke());
