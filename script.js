@@ -5,7 +5,7 @@ async function loadJoke() {
     const response = await fetch('https://v2.jokeapi.dev/joke/Any?type=twopart');
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
-    const data = response.json();
+    const data = await response.json();
 
     setupEl.textContent = data.setup;
     punchEl.textContent = data.delivery;
