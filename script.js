@@ -20,4 +20,7 @@ btn = document.getElementById("newJokeBtn");
 
 cardEl = document.getElementById("card");
 
+setupEl = document.getElementById("setupline");
+punchEl = document.getElementById("punchline");
+
 btn.addEventListener('click', loadJoke);
