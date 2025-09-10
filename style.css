@@ -50,6 +50,6 @@ button:hover { background: #e68900; }
   color: #777;
 }
 
-.hidded {
+.hidden {
   opacity: 0.0;
 }
