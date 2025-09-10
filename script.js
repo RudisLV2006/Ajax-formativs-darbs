@@ -16,5 +16,8 @@ function loadJoke() {
     '❗️ Something went wrong. Please try again.';
   }
 }
+btn = document.getElementById("newJokeBtn");
+
+console.log(btn);
 
 btn.addEventListener('submit', loadJoke());
