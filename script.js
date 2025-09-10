@@ -20,4 +20,4 @@ btn = document.getElementById("newJokeBtn");
 
 cardEl = document.getElementById("card");
 
-btn.addEventListener('submit', loadJoke());
+btn.addEventListener('submit', loadJoke);
